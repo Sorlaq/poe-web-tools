@@ -1,0 +1,10 @@
+html{
+    background-color: midnightblue
+}
+
+#container{
+    margin: auto;
+    width: 1200px;
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
