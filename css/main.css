@@ -1,10 +1,28 @@
 html{
-    background-color: midnightblue
+    background-color: midnightblue;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
 
 #container{
     margin: auto;
     width: 1200px;
-    height: 900px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#top-bar{
+    padding-left: 10%;
+    color: white;
+    font-size: 40px;
+    font-family: Calibri;
+    line-height: 90px;
+    width: 90%;
+    height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
 }
