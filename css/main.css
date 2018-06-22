@@ -10,6 +10,8 @@ body{
 }
 
 #container{
+    font-family: Calibri;
+    color: white;
     margin: auto;
     width: 1200px;
     height: 100%;
@@ -18,11 +20,30 @@ body{
 
 #top-bar{
     padding-left: 10%;
-    color: white;
     font-size: 40px;
-    font-family: Calibri;
     line-height: 90px;
     width: 90%;
     height: 90px;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+#user-controls{
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+
+#output{
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+
+table{
+    color: inherit;
+}
+
+td{
+    padding: 5px;
+    vertical-align: top;
 }
