@@ -47,3 +47,12 @@ td{
     padding: 5px;
     vertical-align: top;
 }
+
+h1{
+    font-size: 35px;
+}
+
+#passiveTotal, #ascendancyTotal{
+    font-size: 40px;
+    color: lightskyblue;
+}

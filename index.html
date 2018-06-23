@@ -4,6 +4,7 @@
 
         <title>PoE web tools</title>
         <link rel="stylesheet" href="css/main.css">
+        <script type="text/javascript" src="js/passives.js"></script>
 
     </head>
 
@@ -20,17 +21,34 @@
                 <table>
                     <tr>
                         <td>Level:</td>
-                        <td><input type="number"></td>
+                        <td><input id="level" type="number"></td>
                     </tr>
 
                     <tr>
                         <td>Class:</td>
-                        <td></td>
+                        <td>
+                            <select id="class">
+                                <option value="duelist">Duelist</option>
+                                <option value="marauder">Marauder</option>
+                                <option value="ranger">Ranger</option>
+                                <option value="scion">Scion</option>
+                                <option value="shadow">Shadow</option>
+                                <option value="templar">Templar</option>
+                                <option value="witch">Witch</option>
+                            </select>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>Bandits:</td>
-                        <td></td>                        </td>
+                        <td>
+                            <select id="bandits">
+                                <option value="alira">Alira</option>
+                                <option value="kraityn">Kraityn</option>
+                                <option value="oak">Oak</option>
+                                <option value="none">Killed all</option>
+                            </select>        
+                        </td>                        </td>
                     </tr>
 
                     <tr>
@@ -45,17 +63,39 @@
 
                     <tr>
                         <td></td>
-                        <td style="text-align: right"><button>Confirm</button></td>
+                        <td style="text-align: right"><button onclick="passiveCount()">Confirm</button></td>
                     </tr>
                 </table>
         
             </div>
                 
             <div id="output">
+                <h1>
+                    By now you should have:<br>
+                    <span id="passiveTotal">#</span> passive tree skill points and <br>
+                    <span id="ascendancyTotal">#</span> ascendancy skill points in total.
+                </h1>
+
+                <hr>
+
+                <table>
+                    <tr>
+                        <td colspan="2"><h2>Detailed breakdown:</h2></td>
+                    </tr>
+                    <tr>
+                        <td>From level:</td>
+                        <td id="fromLevel"></td>
+                    </tr>
+                    <tr>
+                        <td>From bandits:</td>
+                        <td id="fromBandits"></td>
+                    </tr>
+                </table>
+                
             </div>
                 
         </div>
 
     </body>
 
-</html>
+</html> 
