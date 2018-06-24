@@ -56,3 +56,7 @@ h1{
     font-size: 40px;
     color: lightskyblue;
 }
+
+.user-input-field{
+    width: 80px;
+}
