@@ -69,35 +69,49 @@
                     </tr>
 
                     <tr>
-                        <td></td>
-                        <td style="text-align: right"><button onclick="passiveCount()">Confirm</button></td>
+                        <td colspan="2" style="text-align: right"><button onclick="passiveCount()">Confirm</button></td>
                     </tr>
                 </table>
         
             </div>
                 
             <div id="output">
-                <h1>
-                    By now you should have:<br>
-                    <span id="passiveTotal">#</span> passive tree skill points and <br>
-                    <span id="ascendancyTotal">#</span> ascendancy skill points in total.
-                </h1>
-
-                <hr>
-
+                
                 <table>
                     <tr>
-                        <td colspan="2"><b>Detailed breakdown:<b></td>
-                    </tr>
-                    <tr>
-                        <td>From level:</td>
-                        <td id="fromLevel"></td>
-                    </tr>
-                    <tr>
-                        <td>From bandits:</td>
-                        <td id="fromBandits"></td>
+
+                        <td style="width: 72%">
+                            <h1>
+                                By now you should have:<br>
+                                <span id="passiveTotal">#</span> passive tree skill points and <br>
+                                <span id="ascendancyTotal">#</span> ascendancy skill points in total.
+                            </h1>
+                        </td>
+
+                        <td style="width: 23%">
+                            <table id="breakdown">
+                                <tr>
+                                    <td colspan="2"><b>Detailed breakdown:<b></td>
+                                </tr>
+                                <tr>
+                                    <td>From level:</td>
+                                    <td id="fromLevel"></td>
+                                </tr>
+                                <tr>
+                                    <td>From bandits:</td>
+                                    <td id="fromBandits"></td>
+                                </tr>
+                                    <td>From quests:</td>
+                                    <td id="fromQuests"></td>
+                                </tr>
+                            </table>
+                        </td>
+
                     </tr>
                 </table>
+                <hr>
+
+                <h2>Quest Tracker</h2>
                 
                 <div id="quest-frame">
 
@@ -108,6 +122,23 @@
                         <p class="description" id="quest1-description">Clear the Fetid Pool of all undead and any other monsters.</p>
                         <p class="reward" id="quest1-reward">Reward: 1 Skill Point</p>
                     </div>
+
+                    <div class="quest" id="quest2-frame">
+                        <a class="toggle" id="quest2" onclick="toggle(this)">[-]</a>
+                        <span class="quest-name">The Marooned Mariner</span>
+                        <span class="recommended-level">(lvl 12)</span>
+                        <p class="description" id="quest2-description">Find the Allflame.</p>
+                        <p class="reward" id="quest2-reward">Reward: 1 Skill Point</p>
+                    </div>
+
+                    
+                    <div class="quest" id="quest3-frame">
+                        <a class="toggle" id="quest3" onclick="toggle(this)">[-]</a>
+                        <span class="quest-name">The Way Forward</span>
+                        <span class="recommended-level">(lvl 17)</span>
+                        <p class="description" id="quest3-description">Tarkleigh wants you to find a path to the Emperor's Road and the inland forest it leads to.</p>
+                        <p class="reward" id="quest3-reward">Reward: 1 Skill Point</p>
+                   </div>
 
                 </div>
 

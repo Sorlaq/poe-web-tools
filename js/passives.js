@@ -8,6 +8,20 @@ function passiveCount(){
         fromLevel = parseInt(document.getElementById("level").value)-1;
     }
 
+    var fromQuests = 0;
+
+    if(fromLevel>=5){
+        fromQuests += 1;
+    }
+
+    if(fromLevel>=12){
+        fromQuests += 1;
+    }
+
+    if(fromLevel>=17){
+        fromQuests += 1;
+    }
+
     var fromBandits;
     var ascPoints = 0;
 
@@ -36,10 +50,11 @@ function passiveCount(){
         ascPoints += 2;
     }
 
+    var totalPassives = fromLevel + fromBandits + fromQuests;
 
-    
-    document.getElementById("passiveTotal").innerHTML = fromLevel+fromBandits;
+    document.getElementById("passiveTotal").innerHTML = totalPassives;
     document.getElementById("fromLevel").innerHTML = fromLevel;
     document.getElementById("fromBandits").innerHTML = fromBandits;
+    document.getElementById("fromQuests").innerHTML = fromQuests;
     document.getElementById("ascendancyTotal").innerHTML = ascPoints;
 }
