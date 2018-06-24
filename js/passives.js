@@ -1,5 +1,13 @@
 function passiveCount(){
-    var fromLevel = parseInt(document.getElementById("level").value)-1;
+    var fromLevel;
+
+    if(isNaN(parseInt(document.getElementById("level").value))){
+        fromLevel = 0;
+    }
+    else{
+        fromLevel = parseInt(document.getElementById("level").value)-1;
+    }
+
     var fromBandits;
     var ascPoints = 0;
 
@@ -10,21 +18,21 @@ function passiveCount(){
         fromBandits = 0;
     }
 
-    var nLab = document.getElementById("nLab").value;
-    var cLab = document.getElementById("cLab").value;
-    var mLab = document.getElementById("mLab").value;
-    var uLab = document.getElementById("uLab").value;
+    var nLab = document.getElementById("nLab");
+    var cLab = document.getElementById("cLab");
+    var mLab = document.getElementById("mLab");
+    var uLab = document.getElementById("uLab");
 
-    if(nLab){
+    if(nLab.checked){
         ascPoints += 2;
     }
-    if(cLab){
+    if(cLab.checked){
         ascPoints += 2;
     }
-    if(mLab){
+    if(mLab.checked){
         ascPoints += 2;
     }
-    if(uLab){
+    if(uLab.checked){
         ascPoints += 2;
     }
 
