@@ -2,9 +2,16 @@
 
     <head>
 
+        <meta author="alexsorlaq.co.nf">
+        <meta charset="utf-8">
+
         <title>PoE web tools</title>
+
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/questframe.css">
+
         <script type="text/javascript" src="js/passives.js"></script>
+        <script type="text/javascript" src="js/questtoggle.js"></script>
 
     </head>
 
@@ -80,7 +87,7 @@
 
                 <table>
                     <tr>
-                        <td colspan="2"><h2>Detailed breakdown:</h2></td>
+                        <td colspan="2"><b>Detailed breakdown:<b></td>
                     </tr>
                     <tr>
                         <td>From level:</td>
@@ -92,6 +99,18 @@
                     </tr>
                 </table>
                 
+                <div id="quest-frame">
+
+                    <div class="quest" id="quest1-frame">
+                        <a class="toggle" id="quest1" onclick="toggle(this)">[-]</a>
+                        <span class="quest-name">A Dirty Job</span>
+                        <span class="recommended-level">(lvl 5)</span>
+                        <p class="description" id="quest1-description">Clear the Fetid Pool of all undead and any other monsters.</p>
+                        <p class="reward" id="quest1-reward">Reward: 1 Skill Point</p>
+                    </div>
+
+                </div>
+
             </div>
                 
         </div>

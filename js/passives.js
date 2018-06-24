@@ -36,6 +36,8 @@ function passiveCount(){
         ascPoints += 2;
     }
 
+
+    
     document.getElementById("passiveTotal").innerHTML = fromLevel+fromBandits;
     document.getElementById("fromLevel").innerHTML = fromLevel;
     document.getElementById("fromBandits").innerHTML = fromBandits;
