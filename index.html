@@ -12,6 +12,7 @@
 
         <script type="text/javascript" src="js/passives.js"></script>
         <script type="text/javascript" src="js/questtoggle.js"></script>
+        <script type="text/javascript" src="js/questdisplay.js"></script>
 
     </head>
 
@@ -69,7 +70,7 @@
                     </tr>
 
                     <tr>
-                        <td colspan="2" style="text-align: right"><button onclick="passiveCount()">Confirm</button></td>
+                        <td colspan="2" style="text-align: right"><button onclick="passiveCount(); questDisplay()">Confirm</button></td>
                     </tr>
                 </table>
         
@@ -138,6 +139,14 @@
                         <span class="recommended-level">(lvl 17)</span>
                         <p class="description" id="quest3-description">Tarkleigh wants you to find a path to the Emperor's Road and the inland forest it leads to.</p>
                         <p class="reward" id="quest3-reward">Reward: 1 Skill Point</p>
+                    </div>
+
+                    <div class="quest" id="quest4-frame">
+                        <a class="toggle" id="quest4" onclick="toggle(this)">[-]</a>
+                        <span class="quest-name">Piety's Pets</span>
+                        <span class="recommended-level">(lvl 30)</span>
+                        <p class="description" id="quest4-description">Kill Piety.</p>
+                        <p class="reward" id="quest4-reward">Reward: 1 Skill Point</p>
                     </div>
 
                 </div>

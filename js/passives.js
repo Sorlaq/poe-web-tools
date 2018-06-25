@@ -10,15 +10,19 @@ function passiveCount(){
 
     var fromQuests = 0;
 
-    if(fromLevel>=5){
+    if(fromLevel=>5){
         fromQuests += 1;
     }
 
-    if(fromLevel>=12){
+    if(fromLevel=>12){
         fromQuests += 1;
     }
 
-    if(fromLevel>=17){
+    if(fromLevel=>17){
+        fromQuests += 1;
+    }
+
+    if(fromLevel=>30){
         fromQuests += 1;
     }
 
@@ -58,3 +62,4 @@ function passiveCount(){
     document.getElementById("fromQuests").innerHTML = fromQuests;
     document.getElementById("ascendancyTotal").innerHTML = ascPoints;
 }
+
